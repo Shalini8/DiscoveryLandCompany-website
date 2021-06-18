@@ -5,15 +5,15 @@ document.getElementById('header').innerHTML = `
                 <a href="../pages/aboutDLC.html">AboutDLC</a>
             </li>
             <li class="nav-link">
-                <a href="#">OurWorlds</a>
+                <a href="../pages/ourWorlds.html">OurWorlds</a>
             </li>
             <li class="nav-link">
-                <a href="#">Experiences</a>
+                <a href="../pages/experiences.html">Experiences</a>
             </li>
             <li class="nav-link">
-                <a href="#">Gallery</a>
+                <a href="../pages/gallery.html">Gallery</a>
             </li>
             <li class="nav-link">
-                <a href="#">Press</a>
+                <a href="../pages/press.html">Press</a>
             </li>
         </ul>`
