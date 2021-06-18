@@ -1,0 +1,49 @@
+.section2 {
+    display: flex;
+}
+
+.backgroundimage {
+    background-image: url('/Discovery_Website/assets/backgroundtry4.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.text-image {
+    margin: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.text1 {
+    margin-top: 10rem;
+    font-size: calc(30.66667px + 1.06667vw);
+    font-family: gt-sectra;
+    font-style: normal;
+}
+
+.text2 {
+    font-size: calc(20.66667px + 1.06667vw);
+    font-family: gotham;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.paragraph {
+    line-height: 2;
+    font-size: .9rem;
+    font-family: messina-sans;
+}
+
+.image-ocean {
+    margin: 250px 100px;
+    z-index: 1;
+}

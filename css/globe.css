@@ -1,0 +1,21 @@
+.globe {
+    background-image: url('/Discovery_Website/assets/globe-usa.jpg');
+}
+
+.image2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32rem;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.black-box {
+    margin-bottom: 25rem;
+    width: 400px;
+    height: 350px;
+    border: 50px;
+    background-color: #161f1e;
+    z-index: 1;
+    opacity: 0.9;
+}
