@@ -75,3 +75,11 @@
 .textow {
     margin-left: 30rem;
 }
+
+.explore {
+    margin: 2rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10% 20%;
+}
