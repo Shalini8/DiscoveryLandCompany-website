@@ -1,0 +1,62 @@
+.menu-div {
+    width: 100%;
+    padding-top: 1%;
+}
+
+.drpdwn-a {
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.a-div {
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.drpdwn-a:hover {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: fit-content;
+}
+
+.drpdwn-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown {
+    display: block;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-content {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+}
+
+.menu-btn {
+    height: 40px;
+    width: 40px;
+}
