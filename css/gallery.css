@@ -1,5 +1,9 @@
 .gallery-section1 {
+<<<<<<< HEAD
     background-image: url(../assets/gallery1/gallerybg.jpg);
+=======
+    background-image: url(../assets/gallery/gallerybg.jpg);
+>>>>>>> 131125fb5e9a18c7d787371f18bb4be88e9d567d
     height: 80vh;
     background-position: 0%;
     background-size: cover;
