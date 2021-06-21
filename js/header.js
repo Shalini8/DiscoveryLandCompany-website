@@ -2,10 +2,10 @@ console.log("hello header.js");
 document.getElementById('header').innerHTML = `
 <ul class="nav-items" >
             <li class="nav-link">
-                <a href="../pages/aboutDLC.html">AboutDLC</a>
+                <a href="../pages/aboutDLC.html">About DLC</a>
             </li>
             <li class="nav-link">
-                <a href="../pages/ourWorlds.html">OurWorlds</a>
+                <a href="../pages/ourWorlds.html">Our Worlds</a>
             </li>
             <li class="nav-link">
                 <a href="../pages/experiences.html">Experiences</a>
@@ -16,11 +16,16 @@ document.getElementById('header').innerHTML = `
             <li class="nav-link">
                 <a href="../pages/press.html">Press</a>
             </li>
+            
             <li class="nav-link">
+            
             <div class="dropdown">
                 <a href="javascript:void(0);" onclick="myFunction()" class="drpdwn-btn"><i class="fa fa-bars"></i>
                 </a>
                 <div id="menu" class="menu-content">
+                <a href="../pages/index1.html" class="logo-content">
+                <img src="../assets/logo.svg" alt="logo">
+                </a>
                     <div class="a-div">
                         <a class="drpdwn-a" href="#">Magazine</a>
                     </div>
@@ -39,7 +44,8 @@ document.getElementById('header').innerHTML = `
                 </div>
             </div>
         </li>
-        </ul>`
+        </ul>
+        `
 
 function myFunction() {
     var dropdown = document.getElementById("menu");

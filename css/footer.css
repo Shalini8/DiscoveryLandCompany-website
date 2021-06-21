@@ -1,10 +1,13 @@
 .footer {
     background-color: black;
     height: 500px;
+    clear: both;
+    width: 100vw;
     overflow: hidden
 }
 
 .footer-content {
+    flex-wrap: wrap;
     padding: 100px;
     display: flex;
     align-items: flex-start;

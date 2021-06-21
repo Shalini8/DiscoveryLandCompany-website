@@ -18,6 +18,7 @@
 }
 
 .image-container {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     z-index: 1;
