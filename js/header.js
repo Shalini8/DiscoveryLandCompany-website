@@ -27,7 +27,7 @@ document.getElementById('header').innerHTML = `
                 <img src="../assets/logo.svg" alt="logo">
                 </a>
                     <div class="a-div">
-                        <a class="drpdwn-a" href="#">Magazine</a>
+                        <a class="drpdwn-a" href="../pages/magazine.html">Magazine</a>
                     </div>
                     <div class="a-div">
                         <a class="drpdwn-a" href="#">Company</a>
