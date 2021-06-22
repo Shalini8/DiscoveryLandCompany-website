@@ -30,16 +30,16 @@ document.getElementById('header').innerHTML = `
                         <a class="drpdwn-a" href="../pages/magazine.html">Magazine</a>
                     </div>
                     <div class="a-div">
-                        <a class="drpdwn-a" href="#">Company</a>
+                        <a class="drpdwn-a" href="../pages/company.html">Company</a>
                     </div>
                     <div class="a-div">
-                        <a class="drpdwn-a" href="#">Foundation</a>
+                        <a class="drpdwn-a" href="../pages/foundation.html">Foundation</a>
                     </div>
                     <div class="a-div">
-                        <a class="drpdwn-a" href="#">Careers</a>
+                        <a class="drpdwn-a" href="../pages/careers.html">Careers</a>
                     </div>
                     <div class="a-div">
-                        <a class="drpdwn-a" href="#">Contact</a>
+                        <a class="drpdwn-a" href="../pages/contact.html">Contact</a>
                     </div>
                 </div>
             </div>
