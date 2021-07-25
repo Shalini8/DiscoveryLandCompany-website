@@ -63,6 +63,7 @@
     padding-right: 15%; */
     padding-top: 3%;
     opacity: 10;
+    z-index: 100;
 }
 
 .menu-btn {
@@ -76,14 +77,21 @@
 }
 
 @media only screen and (max-width: 500px) {
-   
-    .menu-content {
-        width: 100%;
-        margin: 0;
+    .menu-div {
+        padding-top: 0%;
+        margin-right: 0;
+        margin-left: 100px;
+
+    }
+
+    header {
+        /* margin-bottom: 2000px; */
         padding: 0;
-        overflow: hidden;
     }
-    .a-div{
-        
+
+    .drpdwn-btn {
+        margin-bottom: 4000px;
     }
+
+    
 }
