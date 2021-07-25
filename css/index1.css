@@ -1,54 +1,107 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
 .section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    width: 0px;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: 100px;
+    padding-top: 200px;
+}
+
+.main-heading {
+    font-size: 65px;
+    margin-bottom: 0;
+}
+
+.tag-line {
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 3px;
+
 }
 
 h1 {
+    margin-top: 0;
+    margin-bottom: 0;
     color: white;
-    text-align: left;
     font-size: 57px;
-    font-family: gt-sectra;
     font-weight: 200;
     z-index: 1;
-    opacity: 0.9;
 }
 
-.video-container {
-    position: absolute;
-    top: 0px;
-    left: 35px;
-    height: 100vh;
-}
-
-.color-overlay {
-    position: absolute;
+.bckgrnd-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: -10;
+    background-position: center;
+    background-size: cover;
     top: 0;
     left: 0;
-    background-color: lightblue;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.1;
+    bottom: 0;
+    right: 0;
 }
 
 .logo-content {
-    align-self: start;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    padding: 1px 0px;
-    margin: 50px 100px;
-    width: 10%;
+    align-items: center;
+    height: 70px;
+    width: 120px;
     z-index: 1;
     opacity: 0.9;
+}
+
+.section-3 {
+    background-color: #fff;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.section-4 {
+    background-color: #f5f5f5;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.section4-paragraph {
+    width: 50%;
+    font-size: 18px;
+    color: #666;
+}
+
+.sec4-image-div {
+    padding: 0 150px;
+}
+
+.a-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec4-a-tag:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+    padding-bottom: 2px;
+}
+
+.sec4-div {
+    padding: 10px 30px 10px 0px;
 }
 
 a {
@@ -58,6 +111,8 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .flex-row {
@@ -67,13 +122,18 @@ ul {
 }
 
 .nav-items {
-    align-self: end;
+    height: min-content;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-left: 150px;
     z-index: 1;
-    opacity: 0.9;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-link {
@@ -81,7 +141,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    padding: 1.6rem 1rem;
+    padding: 0 1rem;
     font-size: 1.1rem;
 }
 
@@ -91,7 +151,7 @@ ul {
     align-items: flex-end;
     position: absolute;
     bottom: 0rem;
-    z-index: 1;
+
 }
 
 .c-hero__scroll {
@@ -154,19 +214,149 @@ textarea {
     color: white;
 }
 
-@media only screen and (max-width: 360px) {
-    .section h1 {
-        color: white;
-        font-size: 40px;
-        text-align: center;
+#lifewellexpcards {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.exp-box {
+    background-image: url("https://dxaurk9yhilm4.cloudfront.net/images/728/Expereinces_slider_190716_095517_464875650e0665072829219c2109f3b9.jpg");
+}
+
+.lifestyle-box {
+    background-image: url("https://dxaurk9yhilm4.cloudfront.net/images/729/lifestyle_slider_190716_095537_0b2516e730d44c336347c45fc67effd5.jpg");
+}
+
+.wellness-box {
+    background-image: url("https://dxaurk9yhilm4.cloudfront.net/images/730/wellness_slider_190716_095551_7a63ac04cea98219d28754079427d015.jpg");
+}
+
+.exp-box,
+.lifestyle-box,
+.wellness-box {
+    background-position: center;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+.arrowoncard {
+    width: 37px;
+    fill: #fff;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.arrowoncard1 {
+    width: 37px;
+    fill: #fff;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    transform: rotateZ(90deg);
+}
+
+.buttoncircle {
+    border: 2px solid white;
+    height: 90px;
+    position: relative;
+    width: 90px;
+    border-radius: 120px;
+}
+
+.buttonandtitle {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 450px;
+    color: #fff;
+    font-size: xx-large;
+}
+
+.title {
+    font-weight: 200;
+}
+
+.arrow-btn {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    /* padding: 2px;     */
+    font-size: 50px;
+    width: 80px;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width:1000px) {
+    #lifewellexpcards {
+        flex-direction: column;
+        width: 100%;
     }
+
+    #experience,
+    #wellness,
+    #lifestyle {
+        height: 40%;
+    }
+
+    .text {
+        padding: 0 30px;
+    }
+
+    .exp-box,
+    .lifestyle-box,
+    .wellness-box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0;
+    }
+}
+
+@media only screen and (max-width: 699px) {
     .nav-link {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .sec4-image-div {
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .text {
+        font-size: 20px;
+        margin: 40% 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .section4-paragraph {
+        width: 100%;
+    }
+
+    .nav-items {
         display: none;
     }
 }
 
-@media screen and (min-width: 500px) {
-    html {
-        font-size: calc(12.42105px + .31579vw);
+@media only screen and (max-width: 360px) {
+    .nav-link {
+        display: none;
     }
+    
+
 }

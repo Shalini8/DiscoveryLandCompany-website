@@ -1,6 +1,11 @@
 console.log("hello header.js");
-document.getElementById('header').innerHTML = `
-<ul class="nav-items" >
+document.getElementById("header").innerHTML = `
+<header>
+<a href="../pages/index1.html" class="logo-content" id="logo-div">
+            <img src="../assets/logo.svg" alt="logo" class="img-tag">
+        </a>
+        
+ <ul class="nav-items" id ="nav-items" >
             <li class="nav-link">
                 <a href="../pages/aboutDLC.html">About DLC</a>
             </li>
@@ -16,16 +21,24 @@ document.getElementById('header').innerHTML = `
             <li class="nav-link">
                 <a href="../pages/press.html">Press</a>
             </li>
-            
-            <li class="nav-link">
-            
+        </ul>
+
+    <div class="dropdown">
+    <a href="javascript:void(0);" onclick="myFunction()" class="drpdwn-btn"><i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+        <div id="menu" class="menu-content">
+        <div class = "logo-btn">
+                   <a href="../pages/index1.html" class="logo-content">
+            <img src="../assets/logo.svg" alt="logo">
+            </a>
             <div class="dropdown">
-                <a href="javascript:void(0);" onclick="myFunction()" class="drpdwn-btn"><i class="fa fa-bars"></i>
-                </a>
-                <div id="menu" class="menu-content">
-                <a href="../pages/index1.html" class="logo-content">
-                <img src="../assets/logo.svg" alt="logo">
-                </a>
+        <a href="javascript:void(0);" onclick="myFunction()" class="drpdwn-btn"><i class="fa fa-bars"></i>
+        </a>
+         </div>
+         </div>
                     <div class="a-div">
                         <a class="drpdwn-a" href="../pages/magazine.html">Magazine</a>
                     </div>
@@ -41,17 +54,18 @@ document.getElementById('header').innerHTML = `
                     <div class="a-div">
                         <a class="drpdwn-a" href="../pages/contact.html">Contact</a>
                     </div>
-                </div>
-            </div>
-        </li>
-        </ul>
-        `
+                </div>`;
 
 function myFunction() {
-    var dropdown = document.getElementById("menu");
-    if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
+    var drpdwn = document.getElementById("menu");
+    if (drpdwn.style.display === "block") {
+        document.getElementById("logo-div").style.display = "flex"
+        document.getElementById("nav-items").style.display = "flex";
+        drpdwn.style.display = "none";
     } else {
-        dropdown.style.display = "block";
+        document.getElementById("nav-items").style.display = "none";
+        drpdwn.style.display = "block";
+        document.getElementById("logo-div").style.display = "none"
+
     }
 }

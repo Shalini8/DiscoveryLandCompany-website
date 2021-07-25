@@ -1,6 +1,7 @@
 .menu-div {
     width: 100%;
     padding-top: 1%;
+    margin-right: 100px;
 }
 
 .drpdwn-a {
@@ -13,7 +14,7 @@
 .a-div {
     padding: 10px 30px;
     margin: 10px;
-    margin-right: 100px;
+    margin-right: 50px;
     font-size: 3rem;
     font-weight: 200;
 }
@@ -30,10 +31,23 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    transition: 1s;
+}
+
+.logo-btn {
+    display: flex;
+    justify-content: space-around;
 }
 
 .dropdown {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding: 1.8rem 1rem; */
+    font-size: 1.1rem;
     display: block;
+
 }
 
 .menu-content {
@@ -45,12 +59,31 @@
     width: 100%;
     height: 100%;
     background-color: #000000;
-    padding-left: 15%;
-    padding-right: 15%;
+    /* padding-left: 15%;
+    padding-right: 15%; */
     padding-top: 3%;
+    opacity: 10;
 }
 
 .menu-btn {
     height: 40px;
     width: 40px;
+}
+
+.img-tag {
+    width: 120px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .menu-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .a-div{
+        
+    }
 }
